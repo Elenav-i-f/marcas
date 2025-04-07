@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con Imágenes</title>
+    <style>
+        table {
+            width: 100%;
+            height: 300px; /* Ajustamos la altura total de la tabla */
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            border: 1px solid black;
+            width: 33.33%;  /* Cada celda ocupa un tercio del ancho de la tabla */
+            height: 100%;   /* Aseguramos que la altura de cada celda sea igual a la de la tabla */
+            padding: 0;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;  /* La imagen ocupa todo el ancho de la celda */
+            height: 100%; /* La imagen ocupa toda la altura de la celda */
+            object-fit: cover; /* Asegura que la imagen se recorte y mantenga la proporción */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla con Tres Imágenes</h1>
+    <table>
+        <tr>
+            <td><img src="file:///home/chronos/u-ae5c313ad0056c4d984ed4ddc4e5507f13247d39/MyFiles/Downloads/Screenshot%202025-04-07%2018.35.10.png" alt="Imagen 1"></td>
+            <td><img src="file:///home/chronos/u-ae5c313ad0056c4d984ed4ddc4e5507f13247d39/MyFiles/Downloads/Screenshot%202025-04-07%2018.35.20.png" alt="Imagen 2"></td>
+            <td><img src="file:///home/chronos/u-ae5c313ad0056c4d984ed4ddc4e5507f13247d39/MyFiles/Downloads/Screenshot%202025-04-07%2018.35.24.png" alt="Imagen 3"></td>
+        </tr>
+    </table>
+</body>
+</html>
