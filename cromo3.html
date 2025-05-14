@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cromo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #c2d7ec, #e6eaf5);
+      text-align: center;
+      padding: 50px;
+    }
+
+    .card {
+      width: 320px;
+      height: 540px;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #d8e2f1, #f1f4fb);
+      color: #000;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      margin: auto;
+      border: 3px solid #7a9cc6;
+    }
+
+    .top-number, .top-right-name {
+      position: absolute;
+      top: 10px;
+      background: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 6px 10px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      text-transform: uppercase;
+    }
+
+    .top-number {
+      left: 10px;
+    }
+
+    .top-right-name {
+      right: 10px;
+    }
+
+    .bottom-number {
+      position: absolute;
+      bottom: 7px;  
+      left: 7px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 14px;
+      padding: 4px 6px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    }
+
+    .name-cromo {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 26px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(to right, #4a6187, #293855);
+      padding: 10px 40px;
+      border-radius: 12px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    }
+
+    .image-info {
+      position: absolute;
+      top: 110px;
+      left: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .image-info img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      border: 4px solid #4a6187;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .image-info .small-number {
+      background-color: #4a6187;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .star-rating {
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-size: 24px;
+      color: #ffcc00;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .card-info {
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%; /* más estrecho */
+    }
+
+    .card-info .info-block {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 24px;
+      height: 130px; /* altura larga */
+      border-radius: 10px;
+      margin-bottom: 9px;
+      font-size: 14px;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.1), 0 2px 5px rgba(0,0,0,0.1);
+      border: 1px solid #c2cce0;
+      overflow: auto;
+    }
+
+    .artist-name {
+      position: absolute;
+      bottom: 36px;
+      left: 20px;
+      font-size: 14px;
+      font-style: italic;
+      color: #ffffff;
+      background: #4a6187;
+      padding: 7px 20px;
+      border-radius: 6px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
+
+    .small-rect {
+      position: absolute;
+      bottom: 36px;
+      right: 20px;
+      background-color: #4a6187;
+      color: white;
+      padding: 7px 20px;
+      font-size: 14px;
+      border-radius: 6px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="top-number">#1</div>
+    <div class="top-right-name">elena</div>
+    <div class="name-cromo">LOBO</div>
+    <div class="bottom-number">/X</div>
+
+    <div class="image-info">
+      <div class="image-box">
+        <img src="file:///home/chronos/u-ae5c313ad0056c4d984ed4ddc4e5507f13247d39/MyFiles/Downloads/_4b63b299-9740-4f31-9ac0-54853eeee89e.jpeg" alt="Imagen del personaje Lobo">
+      </div>
+      <div class="small-number">+3</div>
+    </div>
+
+    <div class="star-rating">
+      <span>⭐</span>
+      <span>⭐</span>
+      <span>⭐</span>
+      <span>⭐</span>
+      <span>⭐</span>
+      <span>⭐</span>
+    </div>
+
+    <div class="card-info">
+      <div class="info-block">DESCRIPCIÓN</div>
+    </div>
+
+    <div class="artist-name">ARTISTA</div>
+    <div class="small-rect">PODER</div>
+  </div>
+
+</body>
+</html>
